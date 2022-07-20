@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Project_Uran_main.Views.ItemsPage"
+             Title="О программе"
+             xmlns:local="clr-namespace:Project_Uran_main.ViewModels"  
+             xmlns:model="clr-namespace:Project_Uran_main.Models"  
+             x:Name="BrowseItemsPage">
+
+
+
+
+    <ScrollView>
+    <StackLayout Padding="10" x:DataType="model:Item" BackgroundColor="White">
+        <Label Text="Project Uran alpha 0.0.1" HorizontalOptions="Start" FontSize="16" FontAttributes="Bold" TextColor="Black"></Label>
+        <Label Text="Приложение находится на начальной стадии разработки, пока что функционал минимален, но будет неуклонно расширяться. Разработка ведётся при помощи одного программиста, который впервые разрабатывает приложения на смартфон, и какой-то матери, так что возможны непридвиденные ошибки." TextColor="Black"></Label>
+        <Label Text="О всех багах и проблемах приложения, а также о ваших идеях и предложениях сообщать в телеграмм канал проекта, конкретно в бота обратной связи." TextColor="Black"></Label>
+        <Label Text="Обратная связь: @project_uraniumbot." TextColor="Black" FontSize="16" FontAttributes="Bold"></Label>
+        <Label Text="Канал проекта: @project_uran." TextColor="Black" FontSize="16" FontAttributes="Bold"></Label>
+        <Image Source="telega.png"></Image>
+        <Frame CornerRadius="10" HasShadow="False" >
+            <StackLayout>
+                <Label Text="Поддержать рублём:" FontSize="14" FontAttributes="Bold" HorizontalTextAlignment="Start" TextColor="Black"></Label>
+                <Frame BackgroundColor="White" CornerRadius="4" HasShadow="True">
+                    <StackLayout>
+                        <Label Text="5228600586359368 – Сбербанк" TextColor="Black" FontAttributes="Bold"></Label>
+                            <Label Text="Попов.И.С" TextColor="Black" FontAttributes="Italic" FontSize="10" HorizontalOptions="End">
+                           
+                            </Label>
+                        </StackLayout>
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"></TapGestureRecognizer>
+                        </Frame.GestureRecognizers>
+                    </Frame>
+                
+            </StackLayout>
+        </Frame>
+    </StackLayout>
+    </ScrollView>
+</ContentPage>

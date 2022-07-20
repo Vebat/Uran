@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Project_Uran_main.Views.AboutPage"
+             xmlns:vm="clr-namespace:Project_Uran_main.ViewModels"
+             Title="Руководства">
+    
+    
+    <ContentPage.BindingContext>
+        <vm:AboutViewModel />
+    </ContentPage.BindingContext>
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+        
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <ScrollView>
+        <StackLayout Margin="5,5,5,5">
+           
+                <Frame>
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"></TapGestureRecognizer>
+                </Frame.GestureRecognizers>
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="kvadicon.png"></Image>
+                    <Label Text="Руководство по экспулатации квадрокоптеров" FontSize="16" FontAttributes="Bold" HorizontalTextAlignment="Start" TextColor="Black"></Label>
+                </StackLayout>
+   
+                </Frame>
+
+            <Frame>
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1"></TapGestureRecognizer>
+                </Frame.GestureRecognizers>
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="articon.png"></Image>
+                    <Label Text="Корректировка артиллерии" FontSize="16" FontAttributes="Bold" HorizontalTextAlignment="Start" TextColor="Black"></Label>
+                </StackLayout>
+
+            </Frame>
+            <Frame>
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_2"></TapGestureRecognizer>
+                </Frame.GestureRecognizers>
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="mineicon.png"></Image>
+                    <Label Text="Действия в районах минной опасности" FontSize="16" FontAttributes="Bold" HorizontalTextAlignment="Start" TextColor="Black"></Label>
+                </StackLayout>
+
+            </Frame>
+            <Frame>
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_3"></TapGestureRecognizer>
+                </Frame.GestureRecognizers>
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="dzoticon.png"></Image>
+                    <Label Text="Инженерное оборудование ротного опорного пункта" FontSize="16" FontAttributes="Bold" HorizontalTextAlignment="Start" TextColor="Black"></Label>
+                </StackLayout>
+
+            </Frame>
+            <Frame>
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_4"></TapGestureRecognizer>
+                </Frame.GestureRecognizers>
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="him.png"></Image>
+                    <Label Text="Мероприятия по защите подразделений от воздействия ВТО  противника" FontSize="16" FontAttributes="Bold" HorizontalTextAlignment="Start" TextColor="Black"></Label>
+                </StackLayout>
+
+            </Frame>
+            <Frame>
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_5"></TapGestureRecognizer>
+                </Frame.GestureRecognizers>
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="binocle.png"></Image>
+                    <Label Text="Основные демаскирующие признаки различных целей" FontSize="16" FontAttributes="Bold" HorizontalTextAlignment="Start" TextColor="Black"></Label>
+                </StackLayout>
+
+            </Frame>
+            <Frame>
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_6"></TapGestureRecognizer>
+                </Frame.GestureRecognizers>
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="chrest.png"></Image>
+                    <Label Text="Оказание первой помощи" FontSize="16" FontAttributes="Bold" HorizontalTextAlignment="Start" TextColor="Black"></Label>
+                </StackLayout>
+
+            </Frame>
+            <Frame>
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_7"></TapGestureRecognizer>
+                </Frame.GestureRecognizers>
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="vistrel.png"></Image>
+                    <Label Text="Как выжить при обстреле" FontSize="16" FontAttributes="Bold" HorizontalTextAlignment="Start" TextColor="Black"></Label>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+        </ScrollView>
+    </Grid>
+
+</ContentPage>
